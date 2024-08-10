@@ -15,10 +15,10 @@ class BottomNav extends StatefulWidget {
 class _BottomNavState extends State<BottomNav> {
   int _selectedIndex = 0;
 
-  static List<Widget> _screens = <Widget>[
-    HomeScreen(),
+  final List<Widget> _screens = <Widget>[
+    const HomeScreen(),
     ExploreScreen(),
-    ProfileScreen(),
+    const ProfileScreen(),
   ];
 
   void onTap(int index) {
